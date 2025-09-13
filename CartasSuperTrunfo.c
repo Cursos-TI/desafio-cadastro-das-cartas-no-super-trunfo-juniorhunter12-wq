@@ -12,7 +12,9 @@ int main(){
     float pib;    
     char estado[20];    
     char codigo [50];    
-    char nome_da_cidade [50];    
+    char nome_da_cidade [50];   
+    float densidade_populacional;
+    float pib_per_capita;
 
     // CARTA 2
 
@@ -23,6 +25,8 @@ int main(){
     char estado2[20];
     char codigo2 [50];
     char nome_da_cidade2 [50];
+    float densidade_populacional2;
+    float pib_per_capita2;
 
     // CARTA 1
 
@@ -33,7 +37,7 @@ int main(){
     scanf("%s", nome_da_cidade);    
 
     printf("Digite o código: \n");
-    scanf("%s", codigo2);
+    scanf("%s", codigo);
 
     printf("Digite a população: \n");
     scanf("%d" ,&populacao);
@@ -47,6 +51,9 @@ int main(){
     printf("Digite os numeros de pontos turísticos: \n");
     scanf("%d" ,&numero_de_pontos_turisticos);
 
+    printf ("densidade_populacional = populacao / area: \n");
+    scanf ("pib_per_capita = (pib * 1000000000) / populacao: \n";   
+
      // CARTA 2
 
     printf("Digite o estado: \n");
@@ -56,7 +63,7 @@ int main(){
     scanf("%s", nome_da_cidade2);
 
     printf("Digite o código: \n");
-    scanf("%s", codigo);
+    scanf("%s", codigo2);
 
     printf("Digite a população: \n");
     scanf("%d" ,&populacao2);
@@ -70,6 +77,9 @@ int main(){
     printf("Digite os numeros de pontos turísticos: \n");
     scanf("%d" ,&numero_de_pontos_turisticos2);
 
+    printf ("densidade_populacional2 = populacao2 / area2: \n");
+    scanf ("pib_per_capita2 = (pib2 * 1000000000) / populacao2: \n"; 
+
 
     // Exibindo as informações CARTA 1
 
@@ -80,6 +90,10 @@ int main(){
     printf("Área (em km²): %f \n", area);    
     printf("PIB: %f \n", pib);  
     printf("Número de pontos turísticos: %d \n", numero_de_pontos_turisticos);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
     
     printf("\n");
 
